@@ -1,2 +1,2 @@
 ## Synopsis
-This is holds all worked examples from "New Perspectives on HTML 5 and CSS: Comprehensive" by Patrick M. Carey.
+This is holds the worked example "HTML Tutorial 1" from "New Perspectives on HTML 5 and CSS: Comprehensive" by Patrick M. Carey.
