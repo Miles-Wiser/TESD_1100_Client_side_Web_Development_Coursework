@@ -1,0 +1,74 @@
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Tutorial Case
+   
+   Positioning Styles for the pc_info.html file
+   Author: Miles Wiser
+   Date:   04/19/2025
+   
+   Filename: pc_info.css
+
+*/
+
+div.infobox {display: none;}
+
+/* Main Styles */
+main {
+   position: relative;
+   height: 1400px;
+   width: 100%;
+}
+
+
+/* Infographic Styles */
+div.infobox {
+   position: absolute;
+}
+
+/* First Infographic */
+div#info1 {
+   display: block;
+   top: 20px;
+   left: 5%;
+}
+
+/* Second Infographic */
+div#info2 {
+   display: block;
+   top: 185px;
+   left: 42%;
+}
+
+/* Third Infographic */
+div#info3 {
+   display: block;
+   top: 135px;
+   left: 75%;
+}
+
+/* Fourth Infographic */
+div#info4 {
+   display: block;
+   top: 510px;
+   left: 8%;
+}
+
+/* Fifth Infographic */
+div#info5 {
+   display: block;
+   top: 800px;
+   left: 3%;
+}
+
+/* Sixth Infographic */
+
+
+/* Seventh Infographic */
+
+
+
+/* Eighth Infographic */
+
+
+
