@@ -1,0 +1,38 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 4
+   Coding Challenge 2
+
+   Author: Miles Wiser
+   Date:   04/23/2025
+   
+   Filename: code4-2_grad.css
+
+*/
+
+/* Shadow Styles */
+h1, h2 {
+   text-shadow: -2px -2px 3px white;
+}
+
+p {
+   text-shadow: 2px 2px 3px red;
+}
+
+article {
+   box-shadow: black 0px 0px 50px 20px inset;
+}
+
+/* Border Styles */
+article {
+   border-radius: 150px;
+}
+
+/* Background Styles */
+article {
+   background: url(landscape.png) bottom right / 100% no-repeat,
+            linear-gradient(165deg, black, rgb(0, 0, 200) 65%,
+               rgb(211, 0, 55) 75%, orange 80%, yellow 82%);
+}
