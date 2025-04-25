@@ -12,16 +12,12 @@
 
 */
 
-
 /* =============================================
    Base styles and mobile styles: up to 480px
    =============================================
 */
 
-
 /* HTML and Body Styles */
-
-   
 
 html {
    background: url(tf_back1.png) center center / cover no-repeat fixed, rgb(134,176,232);
@@ -194,15 +190,15 @@ body > section#main {
       text-align: left;
       text-indent: 12px;
    }
-   
+
    /* Aside Styles */
-   
+
    body > aside {
       display: none;
    }
-   
+
    /* Navicon Menu Styles */
-   
+
    a#navicon {
       display: block;
    }
@@ -210,7 +206,6 @@ body > section#main {
    nav.horizontal ul {
       display: none;
    }
-   
    
    a#navicon:hover+ul, nav.horizontal ul:hover {
       display: block;
@@ -224,9 +219,6 @@ body > section#main {
 
 @media only screen and (min-width: 481px) {
 
-   
-
-   
    /* Article H1 Styles */
    
    section#main > h1 {

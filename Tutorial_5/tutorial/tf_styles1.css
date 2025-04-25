@@ -20,7 +20,6 @@
    ===========
 */
 
-
 /* HTML and Body Styles */
 
 html {
@@ -102,7 +101,6 @@ ul.submenu {
    background-color: rgb(181, 204, 136);
 }
 
-
 /* Section Styles */
 
 section {
@@ -151,7 +149,6 @@ ul.submenu {
 a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
    display:block;
 }
-
 
 /* New Styles Added Below */
 

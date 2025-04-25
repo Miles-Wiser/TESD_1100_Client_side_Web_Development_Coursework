@@ -11,7 +11,6 @@
 
 */
 
-
 /* Basic styles to be used with all devices and under all conditions */
 
 article, aside, figcaption, figure,
@@ -34,7 +33,6 @@ li, main, nav, nav a, ol, p, section, span, ul {
    box-sizing: border-box;  
 }
 
-
 /* Set the default page element styles */
 
 body {
@@ -53,4 +51,3 @@ nav ul {
 nav a {
    text-decoration: none;
 }
-
