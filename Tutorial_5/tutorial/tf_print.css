@@ -4,8 +4,8 @@
    Tutorial 5
    Tutorial Case
    
-   Author:   
-   Date:     
+   Author:   Miles Wiser
+   Date:     04/24/2025
    
    Filename: tf_print.css
 
@@ -17,7 +17,9 @@
 
 
 /* Hidden Objects */
-
+nav.horizontal, aside, footer {
+   display: none  ;
+}
 
 
 /* Page Box Styles */
