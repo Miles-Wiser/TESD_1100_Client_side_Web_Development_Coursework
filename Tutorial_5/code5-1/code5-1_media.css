@@ -1,0 +1,65 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 5
+   Coding Challenge 1
+
+   Author:   Miles Wiser
+   Date:     04/25/2025
+   Filename: code5-1_media.css
+
+*/
+
+/* =====================
+   Devices 500px or less
+   =====================
+*/
+@media only screen and (max-width: 500px) {
+   article img {
+      display: none;
+   }
+
+   ul.submenu li {
+      text-align: center;
+   }
+}
+
+/* ========================
+   Devices 501px or greater
+   ========================
+*/
+
+@media only screen and (min-width: 501px) {
+   nav {
+      float: left;
+      width: 130px;
+      height: 400px;
+      margin: 30px 25px 0px 0px;
+   }
+}
+
+/* ========================
+   Devices 710px or greater
+   ========================
+*/
+@media only screen and (min-width: 710px) {
+   nav {
+      float: none;
+      width: 100%;
+      height: auto;
+      margin: 0px;
+   }
+
+   ul.mainmenu {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+   }
+
+   ul.mainmenu li {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 120px;
+   }
+}
