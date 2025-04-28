@@ -1,6 +1,13 @@
+## Requirements
+- 3 - 8 column layout
+- Minimum of 2 images/media
+- Navigate to 3 pages
+- Javascript in any capacity (DOM changes, animation, image adjustments, etc.)
+
 ## Ideas
 - Museum
   + Display popular works of art on a "wall." When the user interacts with the art, information is provided.
+  + Have a Audio/Visual "halls" to navigate to.
 - 3D Landscape
   + Set up rows of images on the z-axis, similar to a file sorter. Allow the user to file through them. All layers "in-front" of the current layer are "behind" the viewer and thus hidden.
   + Each layer shows something new. I.e:
