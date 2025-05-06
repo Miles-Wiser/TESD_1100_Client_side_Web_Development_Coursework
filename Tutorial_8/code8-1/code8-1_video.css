@@ -5,9 +5,14 @@
    Tutorial 8
    Coding Challenge 1
 
-   Author:   
-   Date:     
+   Author:   Miles Wiser
+   Date:     5/6/25
    Filename: code8-1_video.css
 
 */
 
+video {
+   display: block;
+   width: 75%;
+   margin: 10px auto;
+}
