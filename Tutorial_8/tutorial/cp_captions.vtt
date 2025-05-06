@@ -1,13 +1,13 @@
 WEBVTT
 
 Title
-00:00.500 --> 00:04.000
-The Ceiling Dance
+00:00.500 --> 00:04.000 line:5% align:middle
+<c.Main>The Ceiling Dance</c>
 
 Subtitle
-00:04.500 --> 00:08.000
+00:04.500 --> 00:08.000 line:5% align:middle
 from Royal Wedding
 
 Ending
-01:38.000 --> 01:44.000
-See more videos at Cinema Penguin
+01:38.000 --> 01:44.000 line:80% oisutuib:95% align:end
+See more videos at <i>Cinema Penguin</i>
