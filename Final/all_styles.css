@@ -1,0 +1,15 @@
+/* Is this reset style necessary? */
+
+html {
+    background-color: rgb(158, 153, 101);
+}
+
+div.game {
+    border: 10px solid black;
+}
+
+div.dialog {
+    border: 5px solid black;
+    box-shadow: 10px 10px 150px black;
+    height: 80%;
+}
