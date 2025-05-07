@@ -6,19 +6,19 @@
    Coding Challenge 4
 
    Debug
-   Author: Coding Challenge 4
-   Date:   2022-03-01
+   Author: Miles Wiser
+   Date:   5/7/2025
 
 
 */
 
 showImage()
-setInterval(showImage(), 5);
+setInterval("showImage()", 5000);
 
 function showImage() {
    var slideNumber = randNumber(1, 14);
-   document.getelementbyid(slide).src = "slide" + slidenumber + ".jpg";
-   document.getelementbyid(slidecaption).textcontent = getCaption(slidenumber);
+   document.getElementById("slide").src = "slide" + slideNumber + ".jpg";
+   document.getElementById("slidecaption").textContent = getCaption(slideNumber);
 }
 
 
