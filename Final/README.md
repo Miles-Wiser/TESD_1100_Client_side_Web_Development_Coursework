@@ -7,6 +7,7 @@
 ## Ideas
 - Museum
   + Display popular works of art on a "wall." When the user interacts with the art, information is provided.
+    - Perhaps take a picture from the wall, "walk" it to another webpage, and hang it in that "room".
   + Have a Audio/Visual "halls" to navigate to.
 - 3D Landscape
   + Set up rows of images on the z-axis, similar to a file sorter. Allow the user to file through them. All layers "in-front" of the current layer are "behind" the viewer and thus hidden.
