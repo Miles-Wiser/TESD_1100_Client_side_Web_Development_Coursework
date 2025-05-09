@@ -6,8 +6,8 @@
    Coding Challenge 2
 
    Debug
-   Author: 
-   Date:   
+   Author: Miles Wiser
+   Date:   5/9/2025
 
 
 */
@@ -60,3 +60,14 @@ links[7] = "https://www.imdb.com/title/tt0060196/?ref_=adv_li_tt";
 links[8] = "https://www.imdb.com/title/tt0050083/?ref_=adv_li_tt";
 links[9] = "https://www.imdb.com/title/tt1375666/?ref_=adv_li_tt";
 
+var htmlCode = "<table><thead><tr><th>Movie</th><th>Description</th><th>Score</th></tr></thead><tbody>";
+
+for (var i = 0; i <= 9; i++) {
+   htmlCode += "<tr><td><a href='" + links[i] + "'>"+ titles[i] + "</a></td>";
+   htmlCode += "<td>" + summaries[i] + "</td>";
+   htmlCode += "<td>" + ratings[i] + "</td></tr>";
+}
+
+htmlCode += "</tbody></table>";
+
+document.getElementById("list").innerHTML = htmlCode;
