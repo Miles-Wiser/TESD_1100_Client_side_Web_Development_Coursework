@@ -1,6 +1,64 @@
-# TESD_1100_Client_side_Web_Development_Coursework
+## Requirements
+- 3 - 8 column layout
+- Minimum of 2 images/media
+- Navigate to 3 pages
+- Javascript in any capacity (DOM changes, animation, image adjustments, etc.)
 
-## Purpose
-This holds all the coursework for TESD 1100: Client Side Web Development at Southwest Technical College. Assignments are seperated by chapter folders and come from "New Perspectives on HTML 5 and CSS: Comprehensive" by Patrick M. Carey.
+## Overview
+### Daily Planner
+The webpages are:
+- Index: holds the daily planner
+- Journal
+- Calendar
 
-A final project folder, as the name suggests, contains the final project for the course. It is the culmination of all material learned throughout the class.
+#### Index
+__________________________________________________
+|Day Month Year     Index_Link      Calendar_Link |
+|                                                 |
+|                                                 |
+|       Lorem ipsum dolor sit amet consectetur    |
+|   adipiscing elit. Quisque faucibus ex sapien   |
+|   vitae pellentesque sem placerat.              |
+|       In id cursus mi pretium tellus duis       |
+|   convallis. Tempus leo eu aenean sed diam urna |
+|   tempor. Pulvinar vivamus fringilla lacus nec  |
+|   metus bibendum egestas.                       |
+|                                                 |
+|                                                 |
+| (<-)                  (+)                  (->) |
+___________________________________________________
+
+
+#### Journal
+__________________________________________________
+|Year               Index_Link       Journal_Link |
+|                                                 |
+|                    Month                        |
+|       ___________________________________       |
+|       |    |    |    |    |    |    |    |      |
+|       |    |    |    |    |    |    |    |      | 
+|       |    |    |    |    |    |    |    |      | 
+|       |    |    |    |    |    |    |    |      | 
+|       |    |    |    |    |    |    |    |      | 
+|       ____________________________________      |
+|                                                 |
+| (<-)                                       (->) |
+___________________________________________________
+
+#### Calendar
+__________________________________________________
+|Month Year         Journal_Link    Calendar_Link |
+|                                                 |
+|Sun    Mon    Tue     Wed     Thu     Fri     Sat|
+|                                                 |
+|       8:00am                                    |
+|       (Icon) "Task # 1"     (radio_btn)(trash)  |
+|       .                                         |
+|       .                                         |
+|       .                                         |
+|       10:00am                                   |
+|       (Icon) "Task # n"     (radio_btn)(trash)  |
+|                                                 |
+|                                                 |
+|                                      (+)        |
+___________________________________________________

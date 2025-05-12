@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+html {
+    background: linear-gradient(235deg, rgb(0, 0, 0), rgb(35, 35, 35));
+    color: white;
+}
+
+body {
+    /* display: flex; */
+    margin: 0px auto;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    width: 85%;
+    min-width: 400px;
+}   
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 3px solid white;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    color: rgb(180, 162, 130);
+
+}
+
+ul li {
+    list-style: none;
+}

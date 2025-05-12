@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="base.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+
+    <script src="day.js" defer></script>
+    <script src="task.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="today"></h1>
+        <nav>
+            <a href="journal.html">Journal</a>
+            <a href="calendar.html">Calendar</a>
+        </nav>
+    </header>
+
+    <section class="week">
+        <p>Sun</p>
+        <p>Mon</p>
+        <p>Tue</p>
+        <p>Wed</p>
+        <p>Thu</p>
+        <p>Fri</p>
+        <p>Sat</p>
+    </section>
+
+    <main id="planner">
+        <p id="noTask">No tasks to display. Begin entering tasks now...</p>
+
+        <ul id="list"></ul>
+    </main>
+
+    <footer>
+        <form action="" method="">
+            <input type="button" id="addTask" value="&plus;">
+            <label for="addTask">Add Task</label>
+        </form>
+
+    </footer>
+</body>
+</html>
