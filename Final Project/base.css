@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+aside, footer, header, main, nav, section { 
+   display: block;
+}
+
 address, article, aside, blockquote, body, cite, 
 div, dl, dt, dd, em, figcaption, figure, footer, 
 h1, h2, h3, h4, h5, h6, header, html, img, 
@@ -17,67 +21,14 @@ li, main, nav, nav a, ol, p, section, span, ul {
 }
 
 html {
-    background: linear-gradient(235deg, rgb(0, 0, 0), rgb(35, 35, 35));
+    background: linear-gradient(235deg, rgb(0, 0, 0), rgb(61, 61, 61));
     color: white;
 }
 
 body {
+    background-color: rgb(42, 42, 42);
     margin: 0px auto;
-    border-left: 1px solid rgb(210, 210, 235);
-    border-right: 1px solid rgb(210, 210, 235);
     width: 80%;
-}
-
-/* Header Styles */
-header h1, header nav {
-    display: inline-block;
-    font-size: 150%;
-    margin: auto 15px auto 15px;
-}
-
-nav a {
-    font-size: 150%;
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: rgb(210, 200, 190);
-}
-
-/* taskEntry Styles */
-div#taskEntry {
-    display: none;
-}
-
-/* Footer Styles */
-footer input {
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    border: 1px solid rgba(240, 228, 218, 0.466);
-}
-
-footer input#addTask {
-    background-image: url(plus.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%; 
-}
-
-footer input.next {
-    background-image: url(arrow.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%; 
-}
-
-footer input.prev {
-    background-image: url(arrow.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    transform: scaleX(-1); 
-}
-
-footer input:hover {
-    background-color: rgba(240, 228, 218, 0.856);
-    color: rgb(43, 42, 42);
+    min-height: 438px;
+    line-height: 1.5em;
 }

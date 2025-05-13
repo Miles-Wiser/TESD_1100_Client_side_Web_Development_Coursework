@@ -20,7 +20,7 @@ function newTask() {
     var htmlList = "<li id='" + taskArray[taskArray.at(-1)].id +"'>"
         + "<p class='time'>" + taskArray[taskArray.at(-1)].time + "</p>"
         + "<p class='task'>" + taskArray[taskArray.at(-1)].description + "</p>"
-        + "<input type='button' class='trash' value='trash'>"
+        + "<input type='button' class='trash'>"
         + "</li>";
 
     // At least one task is visible. This <p> element is not needed.

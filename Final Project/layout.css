@@ -1,0 +1,72 @@
+
+
+body {
+    min-height: 646px;
+    position: relative;
+    border-left: 2px solid rgba(210, 210, 235, 0.2);
+    border-right: 2px solid rgba(210, 210, 235, 0.2);
+    box-shadow: 1px 0px 2px rgba(190, 190, 210, 0.12),
+                -1px 0px 2px rgba(190, 190, 210, 0.12);
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(230, 184, 175);
+    border-bottom: 1px solid rgba(210, 210, 235);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.606);
+}
+
+header h1, header nav {
+    display: inline-block;
+    font-size: 150%;
+    margin: 15px;
+}
+
+nav a {
+    margin: 10px;
+    font-size: 150%;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(207, 203, 200);
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 5%;
+    right: 15%;
+}
+
+footer input {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid rgba(240, 228, 218, 0.466);
+}
+
+footer input#addTask {
+    background-image: url(plus.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+}
+
+footer input.next {
+    background-image: url(arrow.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+}
+
+footer input.prev {
+    background-image: url(arrow.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: scaleX(-1); 
+}
+
+footer input:hover {
+    background-color: rgba(240, 228, 218, 0.856);
+    color: rgb(43, 42, 42);
+}
