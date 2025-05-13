@@ -1,33 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <!--
-    Final Project
-    Southwest Technical College
-    TESD 1100: Client-Side Web Development
-     
-    Project_Title_Here
-    Author: Miles Wiser
-    Date: 5/3/2025
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="base.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
 
-    -->
-
-    <meta charset="utf-8">
-    <title>Final_Project_Title_Here</title>
-    <link href="reset.css" rel="stylesheet" />
-    <link href="fp_styles.css" rel="stylesheet">
+    <script src="day.js" defer></script>
+    <script src="task.js" defer></script>
 </head>
-
 <body>
     <header>
+        <h1 id="today"></h1>
         <nav>
-            <ul>
-                <li><a href="classics.html">Classics Room</a></li>
-                <li><a href="ai.html">AI Horrors</a></li>
-            </ul>
+            <a href="journal.html">Journal</a>
+            <a href="calendar.html">Calendar</a>
         </nav>
     </header>
-</body>
 
+    <section class="week">
+        <p>Sun</p>
+        <p>Mon</p>
+        <p>Tue</p>
+        <p>Wed</p>
+        <p>Thu</p>
+        <p>Fri</p>
+        <p>Sat</p>
+    </section>
+
+    <main id="planner">
+        <p id="noTask">No tasks to display. Begin entering tasks now...</p>
+
+        <ul id="list"></ul>
+    </main>
+
+    <footer>
+        <form action="" method="">
+            <input type="button" id="addTask" value="&plus;">
+            <label for="addTask">Add Task</label>
+        </form>
+
+    </footer>
+</body>
 </html>

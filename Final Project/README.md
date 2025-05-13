@@ -4,20 +4,61 @@
 - Navigate to 3 pages
 - Javascript in any capacity (DOM changes, animation, image adjustments, etc.)
 
-## Ideas
-- Museum
-  + Display popular works of art on a "wall." When the user interacts with the art, information is provided.
-    - Perhaps take a picture from the wall, "walk" it to another webpage, and hang it in that "room".
-  + Have a Audio/Visual "halls" to navigate to.
-- 3D Landscape
-  + Set up rows of images on the z-axis, similar to a file sorter. Allow the user to file through them. All layers "in-front" of the current layer are "behind" the viewer and thus hidden.
-  + Each layer shows something new. I.e:
-    - a grassy knoll occupies layer 1. Layer 2 puts the viewer on top of the hill and can see many more layers. The viewer can see a deer grazing on the next layer and a     bird flying in the distance, ect. On layer 3, the deer is startled. Layer 4 shows the deer running away.
-- Dungeon Crawler "Simulator"
-  + The user travels through a maze. The perspective is locked. Much like the image. <img src="https://i.imgur.com/JDDTMB5.jpg" align=right width=250px height=auto>
-  + Perhaps track health and monsters. Perhaps focus on the visuals. I.e. changing walls and/or landscapes.
+## Overview
+### Daily Planner
+The webpages are:
+- Index: holds the daily planner
+- Journal
+- Calendar
+
+#### Index
+__________________________________________________
+|Day Month Year     Index_Link      Calendar_Link |
+|                                                 |
+|                                                 |
+|       Lorem ipsum dolor sit amet consectetur    |
+|   adipiscing elit. Quisque faucibus ex sapien   |
+|   vitae pellentesque sem placerat.              |
+|       In id cursus mi pretium tellus duis       |
+|   convallis. Tempus leo eu aenean sed diam urna |
+|   tempor. Pulvinar vivamus fringilla lacus nec  |
+|   metus bibendum egestas.                       |
+|                                                 |
+|                                                 |
+| (<-)                  (+)                  (->) |
+___________________________________________________
 
 
-## Helpful Links
-For public domain images:
-<a src="https://www.metmuseum.org/art/collection">Met Museum</a>
+#### Journal
+__________________________________________________
+|Year               Index_Link       Journal_Link |
+|                                                 |
+|                    Month                        |
+|       ___________________________________       |
+|       |    |    |    |    |    |    |    |      |
+|       |    |    |    |    |    |    |    |      | 
+|       |    |    |    |    |    |    |    |      | 
+|       |    |    |    |    |    |    |    |      | 
+|       |    |    |    |    |    |    |    |      | 
+|       ____________________________________      |
+|                                                 |
+| (<-)                                       (->) |
+___________________________________________________
+
+#### Calendar
+__________________________________________________
+|Month Year         Journal_Link    Calendar_Link |
+|                                                 |
+|Sun    Mon    Tue     Wed     Thu     Fri     Sat|
+|                                                 |
+|       8:00am                                    |
+|       (Icon) "Task # 1"     (radio_btn)(trash)  |
+|       .                                         |
+|       .                                         |
+|       .                                         |
+|       10:00am                                   |
+|       (Icon) "Task # n"     (radio_btn)(trash)  |
+|                                                 |
+|                                                 |
+|                                      (+)        |
+___________________________________________________
