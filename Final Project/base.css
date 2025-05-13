@@ -8,6 +8,7 @@ li, main, nav, nav a, ol, p, section, span, ul {
    padding: 0;
    border: 0;
    font-size: 100%;
+   list-style: none;
    vertical-align: baseline;
    background: transparent;
    -webkit-box-sizing: border-box;
@@ -22,17 +23,31 @@ html {
 
 body {
     margin: 0px auto;
+    border-left: 1px solid rgb(210, 210, 235);
+    border-right: 1px solid rgb(210, 210, 235);
     width: 80%;
 }
 
 /* Header Styles */
+header h1, header nav {
+    display: inline-block;
+    font-size: 150%;
+    margin: auto 15px auto 15px;
+}
+
 nav a {
+    font-size: 150%;
     color: white;
     text-decoration: none;
 }
 
 nav a:hover {
     color: rgb(210, 200, 190);
+}
+
+/* taskEntry Styles */
+div#taskEntry {
+    display: none;
 }
 
 /* Footer Styles */

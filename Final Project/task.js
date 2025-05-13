@@ -2,30 +2,41 @@
 
 var taskArray = new Array;
 
-document.forms[0].onclick = function() {
+// Adds task(s) to html file
+if (taskArray.length >= 1) {
+    document.getElementById("noTask").style.display = "none";
+}
+
+document.forms[1].onclick = function() {
+    showNewTask();
     document.getElementById("list").innerHTML += newTask();
 }
 
+// Adds Task object to taskArray
 function newTask() {
-    taskArray[taskArray.at(-1)] = new Task(0, 1750, "Testing Task");
+    taskArray[taskArray.at(-1)] = new Task(1750, "Testing Task");
 
-    alert("New Task");
-
+    // List task information in proper order
     var htmlList = "<li id='" + taskArray[taskArray.at(-1)].id +"'>"
         + "<p class='time'>" + taskArray[taskArray.at(-1)].time + "</p>"
         + "<p class='task'>" + taskArray[taskArray.at(-1)].description + "</p>"
-        + "<input type='checkbox' class='checkbox'>"
-        + "<label for='checkbox'>Incomplete/Complete</label>"
         + "<input type='button' class='trash' value='trash'>"
         + "</li>";
 
+    // At least one task is visible. This <p> element is not needed.
+    document.getElementById("noTask").style.display = "none";
+    
     return htmlList;
 }
 
+// Shows "add task" menu
+function showNewTask() {
+    document.getElementById("taskEntry").style.display = "block";
+}
 
 class Task {
-    constructor(id, time, description) {
-        this.id = id;
+    constructor(time, description) {
+        this.id = time;
         this.time = time;
         this.description = description;
     }

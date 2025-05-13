@@ -1,0 +1,8 @@
+section.week p {
+    display: inline-block;
+}
+
+li p, li input {
+    display: inline-block;
+    margin: auto 15px auto 0px;
+}
