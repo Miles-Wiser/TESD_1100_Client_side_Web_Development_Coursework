@@ -8,8 +8,12 @@ if (taskArray.length >= 1) {
 }
 
 document.forms[1].onclick = function() {
-    showNewTask();
+    showNewTask(true);
+}
+
+document.getElementById("submit").onclick = function() {
     document.getElementById("list").innerHTML += newTask();
+    showNewTask(false);
 }
 
 // Adds Task object to taskArray
@@ -27,13 +31,16 @@ function newTask() {
     document.getElementById("noTask").style.display = "none";
     
     return htmlList;
+    // return "<p class='time'>" + document.getElementById('description').innerHTML +"</p>" //Use this to get information from the form.
 }
 
-// Shows "add task" menu
-function showNewTask() {
-    document.getElementById("taskEntry").style.display = "block";
+// Toggles "add task" menu visibility
+function showNewTask(show) {
+    if (show == true) {document.getElementById("taskEntry").style.display = "block";}
+    else {document.getElementById("taskEntry").style.display = "none";}
 }
 
+// Task Object
 class Task {
     constructor(time, description) {
         this.id = time;

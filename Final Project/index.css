@@ -20,6 +20,9 @@ li p, li input {
 /* taskEntry Styles */
 div#taskEntry {
     display: none;
+    position: fixed;
+    top: 50%;
+    left: 25%;
 }
 
 /* Task Styles */
