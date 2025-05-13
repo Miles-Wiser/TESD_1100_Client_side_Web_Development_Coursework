@@ -21,34 +21,48 @@ html {
 }
 
 body {
-    /* display: flex; */
     margin: 0px auto;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    width: 85%;
-    min-width: 400px;
-}   
-
-header {
-    display: flex;
-    justify-content: space-evenly;
-    border-bottom: 3px solid white;
-    font-size: 30px;
+    width: 80%;
 }
 
-nav {
-    display: flex;
-    justify-content: space-evenly;
-}
+/* Header Styles */
 nav a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
+
 nav a:hover {
-    color: rgb(180, 162, 130);
-
+    color: rgb(210, 200, 190);
 }
 
-ul li {
-    list-style: none;
+/* Footer Styles */
+footer input {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid rgba(240, 228, 218, 0.466);
+}
+
+footer input#addTask {
+    background-image: url(plus.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+}
+
+footer input.next {
+    background-image: url(arrow.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+}
+
+footer input.prev {
+    background-image: url(arrow.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: scaleX(-1); 
+}
+
+footer input:hover {
+    background-color: rgba(240, 228, 218, 0.856);
+    color: rgb(43, 42, 42);
 }

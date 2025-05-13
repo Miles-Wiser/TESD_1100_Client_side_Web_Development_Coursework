@@ -7,23 +7,26 @@ document.forms[0].onclick = function() {
 }
 
 function newTask() {
-    taskArray[taskArray.length] = new objTask();
+    taskArray[taskArray.at(-1)] = new Task(0, 1750, "Testing Task");
+
     alert("New Task");
-    var htmlList = " <li id='" + (taskArray.at(-1).id) +"'>"
-        + "<p class='time'>" + taskArray.at(-1).time + "</p>"
-        + "<p class='task'>" + taskArray.at(-1).description + "</p>"
+
+    var htmlList = "<li id='" + taskArray[taskArray.at(-1)].id +"'>"
+        + "<p class='time'>" + taskArray[taskArray.at(-1)].time + "</p>"
+        + "<p class='task'>" + taskArray[taskArray.at(-1)].description + "</p>"
         + "<input type='checkbox' class='checkbox'>"
         + "<label for='checkbox'>Incomplete/Complete</label>"
         + "<input type='button' class='trash' value='trash'>"
-        + "<label for='trash'>Trash</label>"
         + "</li>";
-    taskArray[taskArray.length] = 1;
 
     return htmlList;
 }
 
-let objTask = {
-    id: 0,
-    time: 700,
-    description: "Enter a task here.",
+
+class Task {
+    constructor(id, time, description) {
+        this.id = id;
+        this.time = time;
+        this.description = description;
+    }
 }
