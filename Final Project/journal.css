@@ -10,11 +10,17 @@ p#noJournal {
 
 /* taskEntry Styles */
 div#journalEntry {
+    background-color: rgb(65, 56, 54);
+    padding: 5px 6px 12px;
+
     display: none;
     width: 50%;
     position: fixed;
     top: 50%;
     left: 25%;
+
+    border: 1px solid white;
+    box-shadow: -6px 6px 12px rgb(100, 83, 79);
 }
 
 div.formRow > textarea {
@@ -23,5 +29,5 @@ div.formRow > textarea {
 
 div.formRow > label {
     font-size: 0.8em;
-    color: rgb(146, 146, 146);
+    color: rgb(189, 189, 189);
 }
