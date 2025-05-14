@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="base.css" rel="stylesheet" />
     <link href="layout.css" rel="stylesheet" />
-
+    <link href="journal.css" rel="stylesheet" />
     <script src="day.js" defer></script>
+    <script src="journal.js" defer></script>
 
 </head>
 <body>
@@ -20,7 +21,10 @@
     </header>
 
     <main id="journal">
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+        <p id="noJournal">No entries to display. Press the "Plus" button to begin.</p>
+
+        <!-- Sample text; remove when styling and scripting is complete -->
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
             faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
             pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
             tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
@@ -45,17 +49,32 @@
             massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit
             semper vel class aptent taciti sociosqu. Ad litora torquent per
             conubia nostra inceptos himenaeos.
-        </p>
+        </p> -->
 
     </main>
 
+    <div id="journalEntry">
+        <form action="" method="post">
+            <fieldset>
+                <legend>Create Journal Entry</legend>
+                <div class="formRow">
+                    <textarea id="description"
+                        rows="10">Enter journal entry here.</textarea>
+                </div>
+
+                <div class="formRow">
+                    <input type="button" id="submit" value="Submit">
+                    <label for="description">Attention: deletes previous entry.</label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
     <footer>
         <form action="" method="post">
-            <fieldset id="journalNav">
-                <input type="button" class="prev" id="prevJournal">
-                <input type="button" id="addTask">
-                <input type="button" class="next" id="nextJournal">
-            </fieldset>
+            <input type="button" class="prev" id="prevJournal">
+            <input type="button" id="addTask">
+            <input type="button" class="next" id="nextJournal">
         </form>
 
     </footer>

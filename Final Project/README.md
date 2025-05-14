@@ -1,17 +1,11 @@
-## Requirements
-- 3 - 8 column layout
-- Minimum of 2 images/media
-- Navigate to 3 pages
-- Javascript in any capacity (DOM changes, animation, image adjustments, etc.)
-
-## Overview
-### Daily Planner
+# Overview
+## Daily Planner
 The webpages are:
 - Index: holds the daily planner
 - Journal
 - Calendar
 
-#### Index
+### Journal
 __________________________________________________
 |Day Month Year     Index_Link      Calendar_Link |
 |                                                 |
@@ -29,7 +23,7 @@ __________________________________________________
 ___________________________________________________
 
 
-#### Journal
+### Calendar
 __________________________________________________
 |Year               Index_Link       Journal_Link |
 |                                                 |
@@ -45,7 +39,7 @@ __________________________________________________
 | (<-)                                       (->) |
 ___________________________________________________
 
-#### Calendar
+### Index
 __________________________________________________
 |Month Year         Journal_Link    Calendar_Link |
 |                                                 |

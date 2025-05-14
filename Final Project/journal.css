@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+p#noJournal {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.413);
+    margin: 50px;
+}
+
+/* taskEntry Styles */
+div#journalEntry {
+    display: none;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 25%;
+}
+
+div.formRow > textarea {
+    width: 100%;
+}
+
+div.formRow > label {
+    font-size: 0.8em;
+    color: rgb(146, 146, 146);
+}
