@@ -25,7 +25,7 @@ function addJournal() {
 
     /* Removes all previously displayed tasks. Then re-displays with new tasks sorted by time */
     document.getElementById("noJournal").style.display = "none";
-    document.getElementById('yesJournal').innerHTML = "<p class='task'>" + newJournal.description + "</p>";
+    document.getElementById('yesJournal').innerHTML = newJournal.description;
 
     saveJournal();
     document.getElementById("journalEntry").style.display = "none"
@@ -37,5 +37,11 @@ function saveJournal() {
 }
 
 function loadJournal(day) {
-    document.getElementById("yesJournal").innerHTML = "<p>Hello</p>";
+    document.getElementById("noJournal").style.display = "none";
+    document.getElementById("yesJournal").innerHTML =
+         "<p>" + localStorage.getItem('journal' + day.getDate()) + "</p>";
+}
+
+if (localStorage.getItem('journal' + date.getDate()) != null) {
+    loadJournal(date);
 }

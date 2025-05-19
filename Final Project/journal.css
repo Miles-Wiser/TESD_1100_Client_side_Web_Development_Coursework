@@ -31,3 +31,16 @@ div.formRow > label {
     font-size: 0.8em;
     color: rgb(189, 189, 189);
 }
+
+/* Main styles */
+p#yesJournal {
+    margin: 20px auto;
+    width: 75%;
+}
+
+p#yesJournal::first-letter {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-right: 3px;
+    float: left;
+}

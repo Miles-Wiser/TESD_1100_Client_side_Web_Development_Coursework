@@ -73,3 +73,22 @@ footer input:hover {
     background-color: rgba(240, 228, 218, 0.856);
     color: rgb(43, 42, 42);
 }
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+ @media only screen and (max-width: 640px) {
+    html {
+        height: 678px;
+    }
+ }
+
+ /* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+
+@media only screen and (min-width: 641px) {
+    
+}
