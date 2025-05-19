@@ -35,3 +35,8 @@ body {
 fieldset {
     border: 0px;
 }
+
+button {
+    background: transparent;
+    color: white;
+}

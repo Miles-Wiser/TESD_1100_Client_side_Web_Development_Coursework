@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daily Planner</title>
     <link href="base.css" rel="stylesheet" />
     <link href="layout.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
-
-    <script src="day.js" defer></script>
-    <script src="task.js" defer></script>
+    <script src="functions.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1 id="today"></h1>
@@ -20,33 +20,8 @@
         </nav>
     </header>
 
-    <section class="week">
-        <p>Sun</p>
-        <p>Mon</p>
-        <p>Tue</p>
-        <p>Wed</p>
-        <p>Thu</p>
-        <p>Fri</p>
-        <p>Sat</p>
-    </section>
-
-    <main id="planner">
-        <p id="noTask">No tasks to display. Press the "Plus" button to add a task.</p>
-
-        <!-- Test code: delete task when css is solved -->
-        <!-- <li id="1">
-            <p class="time">1500</p>
-            <p class="task">This is a task: Here is it's description</p>
-            <input type='button' class='trash'>
-        </li>
-
-        <li id="2">
-            <p class="time">1500</p>
-            <p class="task">This is a task: Here is it's description</p>
-            <input type='button' class='trash'>
-        </li> -->
-
-        <ul id="list"></ul>
+    <main>
+        <ul id="task"></ul>
     </main>
 
     <div id="taskEntry">
@@ -60,12 +35,12 @@
                 </div>
 
                 <div class="formRow">
-                    <textarea id="description"
+                    <textarea id="descTask"
                         rows="3" cols="30">Enter task description here.</textarea>
                 </div>
 
                 <div class="formRow">
-                    <input type="button" id="submit" value="Submit">
+                    <button type="button" id="submit" onclick="addTask()">Submit</button>
                 </div>
             </fieldset>
         </form>
@@ -73,9 +48,8 @@
 
     <footer>
         <form action="" method="">
-            <input type="button" id="addTask">
+            <button type="button" id="addTask" onclick="showTaskEntry()"><img src="plus.png"></button>
         </form>
-
     </footer>
 </body>
 </html>
