@@ -40,8 +40,6 @@ const txtTask = document.getElementById("descTask");
 // holds tasks
 var arrTask = new Array();
 
-if (arrTask.length <= 0) {showTaskEntry()};
-
 function showTaskEntry() {
     taskEntry.style.display = "block";
 }
@@ -185,5 +183,6 @@ class Task {
     }
 }
 
-
 loadTasks(arrTask);
+
+if (arrTask.length <= 0) {showTaskEntry()};
