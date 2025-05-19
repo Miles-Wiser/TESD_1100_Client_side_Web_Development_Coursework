@@ -37,6 +37,6 @@ fieldset {
 }
 
 button {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.055);
     color: white;
 }

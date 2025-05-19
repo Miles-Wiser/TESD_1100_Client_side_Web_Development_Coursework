@@ -1,36 +1,41 @@
-"use strict";
+/* journal.html Functions */
 
-var tempVar = 0; // This is temporary; delete when cookies are solved. Also Change the conditional for addTask.onclick
+const txtJournal = document.getElementById("journalDesc");
+var arrJournal = new Array();
 
-var journalDay = new Array(31);
-var journalEntry = new Array(31);
-
-const btnSubmit = document.getElementById("submit");        // Journal submit button
-const txtDesc = document.getElementById("description");     // Journal text area
-
-document.getElementById("addTask").onclick = function() {
-    if (tempVar == 0) {document.getElementById("noJournal").style.display = "none"; tempVar++;}
-
-    showEntry(true);
+class Journal {
+    constructor(order, description) {
+        this.order = order;
+        this.description = description;
+    }
 }
 
-document.getElementById("submit").onclick = function() {
-    submitEntry();
-    showEntry(false);
+function showTxtEntry() {
+    document.getElementById("journalEntry").style.display = "block";
 }
 
-// Toggles visibility of journalEntry pop-up
-function showEntry(tf) {
-    if (tf == true) {document.getElementById("journalEntry").style.display = "block";}
-    else {document.getElementById("journalEntry").style.display = "none";}
+function addJournal() {
+    const txtJournalValue = txtJournal.value;
+
+    // sets entry box values to an object
+    const newJournal = new Journal(date.getDate(), txtJournalValue);
+
+    // sorts objects by time
+    arrJournal[newJournal.order] = newJournal;
+
+    /* Removes all previously displayed tasks. Then re-displays with new tasks sorted by time */
+    document.getElementById("noJournal").style.display = "none";
+    document.getElementById('yesJournal').innerHTML = "<p class='task'>" + newJournal.description + "</p>";
+
+    saveJournal();
+    document.getElementById("journalEntry").style.display = "none"
 }
 
-// Adds value to journalDay
-function submitEntry() {
-    const day = localStorage.getItem("day");
-    const entry = localStorage.getItem("entry");
+function saveJournal() {
+    localStorage.setItem('journal' + date.getDate(), txtJournal.value);
+    localStorage.setItem('date' + date.getDate(), date.getDate());
+}
 
-    localStorage.setItem("day", journalDay[date.getDate()]);
-    localStorage.setItem("entry", txtDesc.innerHTML);
-    document.getElementById("yesJournal").innerHTML = `${entry}`;
+function loadJournal(day) {
+    document.getElementById("yesJournal").innerHTML = "<p>Hello</p>";
 }

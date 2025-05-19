@@ -56,13 +56,13 @@ footer input#addTask {
     background-position: 50% 50%; 
 }
 
-footer input.next {
+footer button.next {
     background-image: url(arrow.png);
     background-repeat: no-repeat;
     background-position: 50% 50%; 
 }
 
-footer input.prev {
+footer button.prev {
     background-image: url(arrow.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;

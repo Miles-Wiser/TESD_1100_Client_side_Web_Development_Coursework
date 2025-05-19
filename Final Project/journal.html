@@ -23,35 +23,6 @@
     <main id="journal">
         <p id="noJournal">No entries to display. Press the "Plus" button to begin.</p>
         <p id="yesJournal"></p>
-
-        <!-- Sample text; remove when styling and scripting is complete -->
-        <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-            hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-            per conubia nostra inceptos himenaeos.
-        </p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-            hendrerit semper vel class aptent taciti sociosqu. Ad litora
-            torquent per conubia nostra inceptos himenaeos.
-        </p>
-
-        <p> ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
-            ex sapien vitae pellentesque sem placerat. In id cursus mi pretium
-            tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
-            Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-            massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit
-            semper vel class aptent taciti sociosqu. Ad litora torquent per
-            conubia nostra inceptos himenaeos.
-        </p> -->
-
     </main>
 
     <div id="journalEntry">
@@ -59,12 +30,12 @@
             <fieldset>
                 <legend>Create Journal Entry</legend>
                 <div class="formRow">
-                    <textarea id="description"
+                    <textarea id="journalDesc"
                         rows="10">Enter journal entry here.</textarea>
                 </div>
 
                 <div class="formRow">
-                    <input type="button" id="submit" value="Submit">
+                    <button type="button" id="submit" onclick="addJournal()">Submit</button>
                     <label for="description">Attention: deletes previous entry.</label>
                 </div>
             </fieldset>
@@ -73,9 +44,9 @@
 
     <footer>
         <form action="" method="post">
-            <input type="button" class="prev" id="prevJournal">
-            <input type="button" id="addTask">
-            <input type="button" class="next" id="nextJournal">
+            <button type="button" class="prev" id="prevJournal" onclick=""><img src="arrow.png"></button>
+            <button type="button" onclick="showTxtEntry()"><img src="plus.png"></button>
+            <button type="button" class="next" id="nextJournal" onclick=""><img src="arrow.png"></button>
         </form>
 
     </footer>
