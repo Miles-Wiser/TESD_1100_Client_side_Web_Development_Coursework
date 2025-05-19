@@ -25,7 +25,7 @@ div#taskEntry {
     
     display: none;
     position: fixed;
-    top: 50%;
+    top: 50%;   
     left: 25%;
 
     border: 1px solid white;
