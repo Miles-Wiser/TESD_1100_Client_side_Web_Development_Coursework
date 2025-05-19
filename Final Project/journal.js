@@ -21,8 +21,6 @@ document.getElementById("submit").onclick = function() {
 
 // Toggles visibility of journalEntry pop-up
 function showEntry(tf) {
-    if (journalEntry[date.getDate()] != null) {txtDesc.innerHTML = localStorage.getItem("entry");}
-
     if (tf == true) {document.getElementById("journalEntry").style.display = "block";}
     else {document.getElementById("journalEntry").style.display = "none";}
 }
