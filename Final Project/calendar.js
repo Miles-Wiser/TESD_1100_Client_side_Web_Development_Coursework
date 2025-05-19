@@ -2,6 +2,10 @@
 
 /* Set the date displayed in the calendar */
 var thisDay = new Date();
+var dayEvent = new Array(31);
+for (var j = 0; j <= 31; j++) {
+   dayEvent[j] = "";
+}
 
 /* Write the calendar to the element with the id "calendar" */
 document.getElementById("calendar").innerHTML = createCalendar(thisDay);
@@ -81,7 +85,6 @@ function calDays(calDate) {
       htmlCode += "<td></td>";
    }
 
-   //// This doesn't work without the events.js
    // Write cells for each day of the month
    var totalDays = daysInMonth(calDate);
    var highlightDay= calDate.getDate();
